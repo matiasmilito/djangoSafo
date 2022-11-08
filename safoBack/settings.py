@@ -82,11 +82,11 @@ WSGI_APPLICATION = 'safoBack.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'safo',
+        'NAME': 'safoapp',
         'USER': 'root',
         'PASSWORD': 'Colon2265',
-        'HOST': 'localhost',
-        'PORT': '3306'
+        'HOST': 'vps-2956645-x.dattaweb.com',
+        'PORT': '5942'
     }
 }
 
@@ -126,7 +126,9 @@ AUTH_USER_MODEL = 'api.User'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-    )
+    ),
+    # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    # 'PAGE_SIZE': 15
 }
 
 SWAGGER_SETTINGS = {
@@ -140,8 +142,8 @@ SWAGGER_SETTINGS = {
 }
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=45),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=1000),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1000),
     'ROTATE_REFRESH_TOKENS': False,
     'BLACKLIST_AFTER_ROTATION': False,
     'UPDATE_LAST_LOGIN': False,
@@ -191,3 +193,9 @@ CORS_ALLOWED_ORIGINS = [
 # dejar esta setting en True permite que cualquier front end app pueda hacer requests a este backend gnorando
 # la setting de arriba, lo seguro seria dejar esta setting en False y completar la lista de url's en esa setting
 CORS_ALLOW_ALL_ORIGINS = True
+
+EMAIL_HOST = 'smtp-mail.outlook.com'
+EMAIL_HOST_USER = 'safoderecho@outlook.com'
+EMAIL_HOST_PASSWORD = 'safo1983'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
