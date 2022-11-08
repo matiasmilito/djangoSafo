@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
+import os
 from datetime import timedelta
 from pathlib import Path
 
@@ -28,9 +29,8 @@ DEBUG = False
 ALLOWED_HOSTS = [
     '168.181.184.208',
     '192.168.200.29',
-    'localhost',
-    '127.0.0.1',
-    'vps-2956645-x.dattaweb.com']
+    'localhost'
+]
 
 
 # Application definition
@@ -182,6 +182,7 @@ SIMPLE_JWT = {
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
