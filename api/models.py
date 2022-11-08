@@ -22,9 +22,9 @@ class Products(models.Model):
 #     dni = models.IntegerField( null=False)
 #     phone = models.IntegerField(null=False)
 class User(AbstractUser):
-    legajo = models.CharField(max_length=12, blank=False)
-    dni = models.BigIntegerField(null=False)
-    phone = models.BigIntegerField(null=False)
+    legajo = models.CharField(max_length=12, blank=False, default=0)
+    dni = models.BigIntegerField(null=False, default=0)
+    phone = models.BigIntegerField(null=False, default=0)
 
 
 class Orders(models.Model):
