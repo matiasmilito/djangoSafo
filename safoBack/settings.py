@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-c%5y3gwmy2-7z3kzee9vvbeo=3t8s#^miw@62*%ww#vt7x+0gr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['168.181.184.208', 'vps-2956645-x.dattaweb.com']
 
 
 # Application definition
@@ -85,7 +85,7 @@ DATABASES = {
         'NAME': 'safoapp',
         'USER': 'root',
         'PASSWORD': 'Colon2265',
-        'HOST': 'vps-2956645-x.dattaweb.com',
+        'HOST': 'localhost',
         'PORT': '5942'
     }
 }
