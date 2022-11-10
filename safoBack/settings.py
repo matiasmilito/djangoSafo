@@ -179,8 +179,8 @@ SIMPLE_JWT = {
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+# STATIC_URL = 'static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -190,10 +190,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # aca lo normal seria poner la lista de url's de front end apps que queremos dejar que le hagan requests a este backend
 # por ej: http://localhost:3000
 #
-CORS_ALLOWED_ORIGINS = [
-    # 'https://safo-vercel.vercel.app',
-    # 'http://safo-vercel.vercel.app'
-]
+CORS_ALLOWED_ORIGINS = [ ]
 
 # dejar esta setting en True permite que cualquier front end app pueda hacer requests a este backend gnorando
 # la setting de arriba, lo seguro seria dejar esta setting en False y completar la lista de url's en esa setting
