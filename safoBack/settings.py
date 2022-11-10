@@ -192,6 +192,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #
 CORS_ALLOWED_ORIGINS = [
     'https://safo-vercel.vercel.app',
+    'http://safo-vercel.vercel.app'
 ]
 
 # dejar esta setting en True permite que cualquier front end app pueda hacer requests a este backend gnorando
