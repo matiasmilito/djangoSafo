@@ -89,7 +89,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'safoapp',
         'USER': 'root',
-        'PASSWORD': 'Colon2265',
+        'PASSWORD': 'safo1983',
         'HOST': 'localhost',
         'PORT': '5186'
     }
