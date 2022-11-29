@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-c%5y3gwmy2-7z3kzee9vvbeo=3t8s#^miw@62*%ww#vt7x+0gr
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '*'
+    'br-asc-ovzcloud-node168.hostinger.io',
+    '181.215.134.12',
+    '2a02:4780:14:e571::1'
 ]
 
 
