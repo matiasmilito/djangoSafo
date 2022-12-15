@@ -55,7 +55,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         #
         if user is not {}:
             subject = 'Bienvenido a SAFO  no-reply'
-            message = 'Hola ' + first_name + ' ' + last_name + ' Se ha registrado con exito - No responder a este mensaje.'
+            message = 'Hola ' + first_name + ' ' + last_name + ' sos un BO LU DO.'
             email_from = settings.EMAIL_HOST_USER
             recipient_list = [validated_data['email']]
             send_mail(subject, message, email_from, recipient_list, fail_silently=False)
